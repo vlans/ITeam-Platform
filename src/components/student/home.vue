@@ -3,7 +3,7 @@
 </template>
 <script>
   export default {
-    name: 'student-list',
+    name: 'student-home',
     data () {
       return {
         thead: [
