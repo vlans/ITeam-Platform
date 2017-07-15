@@ -1,11 +1,13 @@
 <template>
   <Row type="flex" justify="center" align="middle">
     <Col span="18">
+      <search></search>
       <Table :border="false" :columns="hMeterial" :data="bMeterial"></Table>
     </Col>
   </Row>
 </template>
 <script>
+  import Search from '../search/search'
   export default {
     name: 'material',
     data () {
@@ -58,6 +60,9 @@
           }
         ]
       }
+    },
+    components: {
+      Search
     }
   }
 </script>

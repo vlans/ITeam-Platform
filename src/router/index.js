@@ -9,6 +9,7 @@ import Tools from '@/components/tools/home'
 import Wiki from '@/components/student-area/src/wiki/home'
 import Share from '@/components/student-area/src/share/home'
 import UserCenter from '@/components/user/home'
+import Upload from '@/components/upload/home'
 
 Vue.use(Router)
 
@@ -52,6 +53,10 @@ export default new Router({
     {
       path: '/center',
       component: UserCenter
+    },
+    {
+      path: '/upload',
+      component: Upload
     }
   ]
 })

@@ -20,6 +20,10 @@
           <Icon type="settings"></Icon>
           工具
       </Menu-item>
+      <Menu-item name="/upload">
+          <Icon type="ios-cloud-upload-outline"></Icon>
+          上传
+      </Menu-item>
       <Submenu name="/student-area">
           <template slot="title">
               <Icon type="chatboxes"></Icon>

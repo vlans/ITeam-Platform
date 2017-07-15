@@ -1,61 +1,48 @@
 <template>
- <div>
-  <search></search>
-  <Table border :columns="arr" :data="data"></Table>
- </div>
+ <Row type="flex" justify="center" align="middle" class="code-row-bg">
+  <Col span="18">
+    <search></search>
+    <Table border :columns="arr" :data="data"></Table>
+  </Col>
+ </Row>
 </template>
 <script>
-  import search from '../search/search'
+  import Search from '../search/search'
   export default {
     name: 'student-list',
     components: {
-      search
+      Search
     },
     data () {
       return {
         arr: [
           {
             type: 'index',
-            title: '序 号',
-            width: 100,
-            fixed: 'left',
-            align: 'center'
+            title: '序 号'
           },
           {
             title: '日 期',
-            key: 'date',
-            width: 200,
-            align: 'center'
+            key: 'date'
           },
           {
             title: '用 户 昵 称',
-            key: 'nickname',
-            width: 200,
-            align: 'center'
+            key: 'nickname'
           },
           {
             title: '姓 名',
-            key: 'name',
-            width: 200,
-            align: 'center'
+            key: 'name'
           },
           {
             title: '联 系 方 式',
-            key: 'telephone',
-            width: 200,
-            align: 'center'
+            key: 'telephone'
           },
           {
             title: '邮 箱',
-            key: 'zip',
-            width: 200,
-            align: 'center'
+            key: 'zip'
           },
           {
             title: '操 作',
-            key: 'operation',
-            width: 200,
-            align: 'center'
+            key: 'operation'
           }],
         data: [
           {
