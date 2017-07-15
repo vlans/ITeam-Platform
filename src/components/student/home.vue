@@ -1,21 +1,18 @@
 <template>
-  <Table :columns="columns1" :data="data1"></Table>
+  <Table :columns="arr" :data="data"></Table>
 </template>
 <script>
   export default {
+    name: 'student-list',
     data () {
       return {
-        columns1: [
-          {
-            title: '姓名',
-            key: 'name'
-          }
-        ],
-        data1: [
-          {
-            name: '小明'
-          }
-        ]
+        arr: [{
+          title: 1,
+          key: 'name'
+        }],
+        data: [{
+          name: 1
+        }]
       }
     }
   }

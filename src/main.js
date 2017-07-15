@@ -4,6 +4,7 @@ import router from './router'
 import iview from 'iview'
 import 'normalize.css'
 import 'iview/dist/styles/iview.css'
+
 Vue.use(iview)
 
 Vue.config.productionTip = false
