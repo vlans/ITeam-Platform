@@ -16,7 +16,7 @@ export default {
 </script>
 <style>
   html, body {
-    min-width: 720px;
+    min-width: 815px;
     height: 100%;
   }
   #app {
