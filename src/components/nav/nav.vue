@@ -48,7 +48,7 @@
     name: 'iteam-nav',
     data () {
       return {
-        navTheme: 'light'
+        navTheme: 'dark'
       }
     },
     methods: {

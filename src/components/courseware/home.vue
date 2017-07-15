@@ -16,18 +16,31 @@
           {
             title: '日期',
             key: 'date',
-            sortable: true
+            sortable: true,
+            width: 200
           },
           {
             title: '课件名称',
             key: 'cname'
           },
           {
+            title: '适用人群',
+            key: 'Adapt',
+            width: 220
+          },
+          {
+            title: '技术类型',
+            key: 'technology',
+            width: 200
+          },
+          {
             title: '主讲老师',
-            key: 'teacher'
+            key: 'teacher',
+            width: 120
           },
           {
             title: '操作',
+            width: 180,
             key: 'action',
             render: (h, p) => {
               return h('div', [

@@ -2,7 +2,7 @@
  <Row type="flex" justify="center" align="middle" class="code-row-bg">
   <Col span="18">
     <search></search>
-    <Table border :columns="arr" :data="data"></Table>
+    <Table :columns="arr" :data="data"></Table>
   </Col>
  </Row>
 </template>
@@ -18,7 +18,8 @@
         arr: [
           {
             type: 'index',
-            title: '序 号'
+            title: '序 号',
+            width: '80'
           },
           {
             title: '日 期',
@@ -42,7 +43,8 @@
           },
           {
             title: '操 作',
-            key: 'operation'
+            key: 'operation',
+            width: '120'
           }],
         data: [
           {

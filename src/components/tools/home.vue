@@ -16,32 +16,28 @@
           {
             title: '日期',
             key: 'date',
-            sortable: true
+            sortable: true,
+            width: 200
           },
           {
             title: '工具名称',
             key: 'cname'
           },
           {
+            title: '工具类型',
+            key: 'cname'
+          },
+          {
             title: '作者',
-            key: 'teacher'
+            key: 'teacher',
+            width: 120
           },
           {
             title: '操作',
+            width: 180,
             key: 'action',
             render: (h, p) => {
               return h('div', [
-                h('Button', {
-                  props: {
-                    type: 'text',
-                    size: 'small'
-                  },
-                  on: {
-                    click () {
-                      console.log(p)
-                    }
-                  }
-                }, '查看'),
                 h('Button', {
                   props: {
                     type: 'text',
