@@ -1,5 +1,5 @@
 <template>
-  <Menu mode="horizontal" :theme="navTheme" active-name="/student" @on-select="routeGo">
+  <Menu mode="horizontal" :theme="navTheme" :active-name="$route.path" @on-select="routeGo">
       <Menu-item name="/student">
           <Icon type="ios-people"></Icon>
           学员管理
@@ -26,22 +26,22 @@
               学员专区
           </template>
           <Menu-group title="功能">
-              <Menu-item name="6-1">wiki</Menu-item>
-              <Menu-item name="6-2">技术分享</Menu-item>
+              <Menu-item name="/student-wiki">wiki</Menu-item>
+              <Menu-item name="/share">技术分享</Menu-item>
           </Menu-group>
       </Submenu>
       <Submenu name="7" class="user-center">
           <template slot="title">
               托尼
           </template>
-          <Menu-item name="7-1">个人中心</Menu-item>
-          <Menu-item name="7-2">登出</Menu-item>
+          <Menu-item name="/center">个人中心</Menu-item>
+          <Menu-item name="/out">登出</Menu-item>
       </Submenu>
   </Menu>
 </template>
 <script>
   export default {
-    name: 'nav',
+    name: 'iteam-nav',
     data () {
       return {
         navTheme: 'light'
