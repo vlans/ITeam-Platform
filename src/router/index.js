@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/home'
 import Student from '@/components/student/home'
+import Open from '@/components/open/home'
 
 Vue.use(Router)
 
@@ -17,6 +18,10 @@ export default new Router({
     {
       path: '/student',
       component: Student
+    },
+    {
+      path: '/open',
+      component: Open
     }
   ]
 })

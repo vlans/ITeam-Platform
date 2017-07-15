@@ -1,26 +1,26 @@
 <template>
-  <Menu mode="horizontal" :theme="navTheme" active-name="1">
-      <Menu-item name="1">
+  <Menu mode="horizontal" :theme="navTheme" active-name="/student" @on-select="routeGo">
+      <Menu-item name="/student">
           <Icon type="ios-people"></Icon>
           学员管理
       </Menu-item>
-      <Menu-item name="2">
+      <Menu-item name="/open">
           <Icon type="ios-book"></Icon>
           公开课
       </Menu-item>
-      <Menu-item name="3">
+      <Menu-item name="/courseware">
           <Icon type="ios-videocam"></Icon>
           课件
       </Menu-item>
-      <Menu-item name="4">
+      <Menu-item name="/material">
           <Icon type="document-text"></Icon>
           资料
       </Menu-item>
-      <Menu-item name="5">
+      <Menu-item name="/tools">
           <Icon type="settings"></Icon>
           工具
       </Menu-item>
-      <Submenu name="6">
+      <Submenu name="/student-area">
           <template slot="title">
               <Icon type="chatboxes"></Icon>
               学员专区
@@ -45,6 +45,11 @@
     data () {
       return {
         navTheme: 'light'
+      }
+    },
+    methods: {
+      routeGo (name) {
+        this.$router.push(name)
       }
     }
   }

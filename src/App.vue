@@ -17,5 +17,9 @@ export default {
 <style>
   html, body {
     min-width: 720px;
+    height: 100%;
+  }
+  #app {
+    height: 100%;
   }
 </style>
