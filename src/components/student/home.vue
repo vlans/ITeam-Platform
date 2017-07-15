@@ -1,21 +1,25 @@
 <template>
-  <Table :columns="thead" :data="tbody"></Table>
+  <Table :columns="columns1" :data="data1"></Table>
 </template>
 <script>
   export default {
-    name: 'student-home',
     data () {
       return {
-        thead: [
-          {title: '姓名', key: 'name'}
+        columns1: [
+          {
+            title: '姓名',
+            key: 'name'
+          }
         ],
-        tbody: [
-          {name: '小明'}
+        data1: [
+          {
+            name: '小明'
+          }
         ]
       }
     }
   }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
   
 </style>
