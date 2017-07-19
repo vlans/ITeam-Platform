@@ -42,9 +42,30 @@
             key: 'zip'
           },
           {
-            title: '操 作',
-            key: 'operation',
-            width: '120'
+            title: '操作',
+            width: 180,
+            key: 'action',
+            render: (h, p) => {
+              return h('div', [
+                h('Button', {
+                  props: {
+                    type: 'text',
+                    size: 'small'
+                  },
+                  on: {
+                    click () {
+                      console.log(p)
+                    }
+                  }
+                }, '编辑'),
+                h('Button', {
+                  props: {
+                    type: 'text',
+                    size: 'small'
+                  }
+                }, '权限')
+              ])
+            }
           }],
         data: [
           {

@@ -1,7 +1,7 @@
 <template>
   <Row type="flex" justify="center" align="middle">
     <Col span="18">
-      <search></search>
+      <search :course='course'></search>
       <Table :columns="hMeterial" :data="bMeterial"></Table>
     </Col>
   </Row>
@@ -71,7 +71,8 @@
             cname: '入门布局以及实现Css3动画',
             teacher: '托尼'
           }
-        ]
+        ],
+        course: ['HTML资料', 'Css资料']
       }
     },
     components: {
