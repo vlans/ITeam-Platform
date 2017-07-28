@@ -12,7 +12,8 @@
     name: 'search',
     data () {
       return {
-        value13: ''
+        value13: '',
+        model10: ''
       }
     },
     methods: {
