@@ -1,11 +1,16 @@
 <template>
-  <Row class="search-padding">
-    <Col span="6" offset="18" class="search-input-right">
-      <Input v-model="value13" class='inputbox'>
-        <Button type="ghost" slot="append" icon="ios-search-strong"></Button>
-      </Input>
-    </Col>
-  </Row>
+<Row type="flex" justify="end" class="code-row-bg">
+  <Col span="4">
+    <Select v-model="model10" multiple>
+        <Option v-for="item in course" :value="item" :key="item">{{ item }}</Option>
+    </Select>
+  </Col>
+  <Col span="6">
+    <Input v-model="value13" >
+        <Button slot="append" icon="ios-search"></Button>
+  </Input>
+  </Col>
+</Row>  
 </template>
 <script>
   export default {
@@ -13,21 +18,19 @@
     data () {
       return {
         value13: '',
+<<<<<<< HEAD
         model10: ''
+=======
+        model10: []
+>>>>>>> a3a7fb7c96db13aea43a513990f05e08f7469180
       }
     },
-    methods: {
-      uploadEmit () {
-        console.log(1)
-      }
-    }
+    props: ['course']
   }
 </script>
-<style lang="scss" scoped>
-  .search-padding {
-    padding: 20px 0;
-    .search-input-right {
-      margin-right: 20px;
-    }
+<style lang="scss">
+  .code-row-bg{
+    padding:10px 0;    
   }
+  
 </style>
